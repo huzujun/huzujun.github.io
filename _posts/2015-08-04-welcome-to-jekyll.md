@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Welcome to Jekyll"
-date: 2015-08-04 03:21:35
+title: "Hello World"
+date: 2016-08-26 20:30:00
 image: '/assets/img/'
-description: 'Put your description here.'
+description: 'The first greeting.'
 tags:
 - jekyll
 - web
