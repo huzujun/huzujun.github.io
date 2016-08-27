@@ -1,6 +1,6 @@
 # Site settings
 title: KyleYoung
-description: KyleYoung
+description: KyleYoung's blog of OI
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kyleyoung-ymj.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
