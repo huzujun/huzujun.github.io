@@ -2,7 +2,7 @@
 title: KyleYoung
 description: KyleYoung
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://willianjusten.com.br" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://kyleyoung-ymj.github.io/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: KyleYoung
@@ -31,7 +31,7 @@ compress_html:
 # For external links add external: true
 links:
   - title: Home
-    url: https://kyleyoung-ymj.github.io/
+    url: /
   - title: Series
     url: /series
   - title: Tags
