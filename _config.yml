@@ -31,7 +31,7 @@ compress_html:
 # For external links add external: true
 links:
   - title: Home
-    url: /
+    url: https://kyleyoung-ymj.github.io/
   - title: Series
     url: /series
   - title: Tags
