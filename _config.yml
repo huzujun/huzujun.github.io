@@ -7,12 +7,8 @@ url: "https://willianjusten.com.br" # the base hostname & protocol for your site
 # User settings
 username: KyleYoung
 user_description: KyleYoung
-user_title: 生命不息,AC不止
+user_title: The only time a OIer can cry is when it's all over.
 email: kyleyoung_ymj@163.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-disqus_username: lorem_ipsum
 
 # Build settings
 markdown: kramdown
