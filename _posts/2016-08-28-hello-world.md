@@ -13,9 +13,19 @@ twitter_text: 'Put your twitter description here.'
 
 Hello World!!!
 
-从[csdn][csdn]搬来此处.其实本人并不怎么会搭博客...不过有机房里的各路神犇们罩着就随便玩玩喽.
+从[csdn](http://blog.csdn.net/kyleyoung_ymj)搬来此处.其实本人并不怎么会搭博客...不过有机房里的各路神犇们罩着就随便玩玩喽.
 
 来一发炫酷的代码高亮:
+
+```c++
+#include<cstdio>
+int main(){
+	puts("Hello World!!!");
+	return 0;
+}
+```
+
+
 
 {% highlight C++ %}
 #include<cstdio>
@@ -27,6 +37,6 @@ int main(){
 
 来一发挂掉的Latex:
 
-$\varphi(n)=n\prod_{p\mid n}(1-\frac 1p}.$
+$\varphi(n)=n\prod_{p\mid n}(1-\frac 1p).$
 
 [csdn]: https://blog.csdn.net/kyleyoung_ymj
