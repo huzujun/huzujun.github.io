@@ -1,12 +1,12 @@
 # Site settings
 title: KyleYoung
-description: KyleYoung's blog of OI
+description: KyleYoung's blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kyleyoung-ymj.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: KyleYoung
-user_description: KyleYoung
+user_description: kyleyoung-ymj
 user_title: The only time an OIer can cry is when it's all over.
 email: kyleyoung_ymj@163.com
 twitter_username: kyleyoung_ymj
