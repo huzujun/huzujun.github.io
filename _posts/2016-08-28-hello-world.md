@@ -33,3 +33,7 @@ int main(){
 
 $\varphi(n)=n\prod_{p\mid n}(1-\frac 1p).$
 
+
+
+<img src="http://latex.codecogs.com/gif.latex?\varphi(n)=n\prod_{p\mid n}(1-\frac 1p)">
+
