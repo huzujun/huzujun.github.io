@@ -36,11 +36,3 @@ $\varphi(n)=n\prod_{p\mid n}(1-\frac 1p).$
 
 
 <img src="http://latex.codecogs.com/gif.latex?\varphi(n)=n\prod_{p\mid n}(1-\frac 1p)">
-
-<p><code>\[
-\begin{aligned}
-\dot{x} &amp; = \sigma(y-x) \\
-\dot{y} &amp; = \rho x - y - xz \\
-\dot{z} &amp; = -\beta z + xy
-\end{aligned}
-\]</code></p>
