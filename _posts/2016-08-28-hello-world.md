@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hello World"
-date: 2016-08-28 21:35:00
+date: 2016-08-30 20:30:00
 description: 'The first greeting to the beautiful world.'
 tags:
 - Hello World
@@ -29,9 +29,15 @@ int main(){
 
 
 
-来一发挂掉的Latex:
+来一发$\LaTeX$:
 
-$\varphi(n)=n\prod_{p\mid n}(1-\frac 1p).$
+$$
+\begin{eqnarray}
+f(n)&=&\sum_{k=0}^n\binom nkg(k),\\
+g(n)&=&\sum_{k=0}^n(-1)^{n-k}\binom nkf(k).
+\end{eqnarray}
+$$
+
 
 
 
