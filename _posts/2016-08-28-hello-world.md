@@ -31,7 +31,7 @@ int main(){
 
 来一发挂掉的Latex:
 
-$a^2+b^2=c^2$
+$\varphi(n)=n\prod_{p\mid n}(1-\frac 1p).$
 
 
 
