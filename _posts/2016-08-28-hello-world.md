@@ -31,7 +31,7 @@ int main(){
 
 来一发挂掉的Latex:
 
-$$\varphi(n)=n\prod_{p\mid n}(1-\frac 1p).$$
+\\(\varphi(n)=n\prod_{p\mid n}(1-\frac 1p).\\)
 
 
 
