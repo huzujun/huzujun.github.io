@@ -4,7 +4,7 @@ title: "愚者千虑,必有一得—博弈论"
 date: 2016-05-24 22:25:00
 description: 'A primary tutorial for game theory.'
 tags:
-- Game Theory
+- game theory
 categories:
 - Algorithms
 ---
