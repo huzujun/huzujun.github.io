@@ -8,12 +8,12 @@ layout: default
                 <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
                     <meta itemprop="datePublished" content="{{post.date}}">
                     <time datetime="{{ post.date | date_to_xmlschema }}">
-                        <span class="day">
+                        <p class="day">
                             {{ post.date | date: "%d" }}
-                        </span>
-                        <span class="month-year">
+                        </p>
+                        <p class="month-year">
                             {{ post.date | date: "%B %Y" }}
-                        </span>
+                        </p>
                     </time>
                 </a>
                 <div class="content">
