@@ -30,13 +30,10 @@ int main(){
 ```
 
 来一发$\LaTeX$:
+
 $$
 \begin{eqnarray}
 f(n)&=&\sum_{k=0}^n\binom nkg(k),\\
 g(n)&=&\sum_{k=0}^n(-1)^{n-k}\binom nkf(k).
 \end{eqnarray}
 $$
-
-
-
-
