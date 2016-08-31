@@ -9,9 +9,7 @@ categories:
 - Others
 ---
 
-### Hello World!!!
-
-
+# Hello World!!!
 
 从[csdn](http://blog.csdn.net/kyleyoung_ymj)搬来此处.其实本人并不怎么会搭博客...不过有机房里的各路神犇们罩着就随便玩玩喽.
 
@@ -31,8 +29,7 @@ int main(){
 }
 ```
 
-来一发$\LaTeX​$:
-
+来一发$\LaTeX$:
 $$
 \begin{eqnarray}
 f(n)&=&\sum_{k=0}^n\binom nkg(k),\\
