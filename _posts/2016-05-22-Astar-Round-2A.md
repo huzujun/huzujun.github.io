@@ -239,7 +239,7 @@ int main(){
 
 于是这题成功变成了一道极水的区间dp...复杂度大概$O(n^3\lg n)$吧...
 
-```
+```c++
 #include<cstdio>
 #include<algorithm>
 using namespace std;
