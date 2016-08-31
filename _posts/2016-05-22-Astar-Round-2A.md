@@ -13,8 +13,12 @@ categories:
 
 这一场比得不算太好吧...主要是机房里人太多了,对面初三的只会写第一题一直在各种bb....略不爽..
 网上题解标程什么的似乎也有了,于是这里按照我做题的顺序略微写几句吧.
+
+
 [**题目链接**](http://acm.hdu.edu.cn/search.php?field=problem&key=2016%22%B0%D9%B6%C8%D6%AE%D0%C7%22+-+%B3%F5%C8%FC%A3%A8Astar+Round2A%A3%A9&source=1&searchmode=source)
-## 1001 All X ##
+
+# 1001 All X
+
  细节比较多的一道模拟题..基本思路很简单,就是找到$m$个$x$模$k$的循环节然后计算即可.
 复杂度$O(k)$.看很多大神也WA了不少次很欣慰...
 ## 1006 Gym Class ##
