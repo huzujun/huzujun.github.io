@@ -1,7 +1,7 @@
 # Site settings
 title: KyleYoung
 description: KyleYoung's blog
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://kyleyoung-ymj.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
@@ -52,4 +52,4 @@ comments :
 
 # paginate
   paginate: 5
-  paginate_path: "/page:num/index.html"
+  paginate_path: "/blog/page:num/"
