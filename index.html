@@ -30,4 +30,7 @@ layout: default
                 </div>
         </article>
     {% endfor %}
+    {% if paginator.total_pages > 1 %}
+	<!-- 分页代码 -->
+	{% endif %}
 </main>
