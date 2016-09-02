@@ -49,7 +49,3 @@ comments :
   provider : duoshuo
   duoshuo : 
   short_name : kyleyoung
-
-# paginate
-  paginate: 10
-  paginate_path: "page:num"
