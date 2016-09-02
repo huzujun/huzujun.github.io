@@ -3,7 +3,7 @@ layout: default
 ---
 
 <main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
                     <meta itemprop="datePublished" content="{{post.date}}">
@@ -21,13 +21,11 @@ layout: default
                     <p class="description">
                         {{ post.description }}
                     </p>
-                    {% if paginator.total_pages = 1 %}
-                        <div class="tags">
-                            {% for tag in post.tags %}
-                                <a href="{{ site.baseurl }}/tags/#{{tag | slugify }}">{{ tag }}</a>
-                            {% endfor %}
-                        </div>
-                    {% endif %}
+                    <div class="tags">
+                        {% for tag in post.tags %}
+                            <a href="{{ site.baseurl }}/tags/#{{tag | slugify }}">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
                 </div>
         </article>
     {% endfor %}
