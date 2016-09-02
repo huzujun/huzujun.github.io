@@ -44,8 +44,12 @@ links:
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
 
-#duoshuo
+# duoshuo
 comments :
   provider : duoshuo
   duoshuo : 
   short_name : kyleyoung
+
+# paginate
+ paginate: 10
+ paginate_path: "page:num"
