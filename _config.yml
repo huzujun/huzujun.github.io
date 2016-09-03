@@ -52,4 +52,4 @@ comments :
 
 # paginate
   paginate: 5
-  paginate_path: "/"
+  paginate_path: "/blog/page:num/"
