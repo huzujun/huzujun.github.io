@@ -12,17 +12,23 @@
     <body>
         {% include svg-icons.html %}
         {% include header-post.html %}
-        <section class="post" align="center" itemscope itemtype="http://schema.org/BlogPosting">
+        <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
             <article role="article" id="scroll" class="post-content" itemprop="articleBody">
                 {{ content }}
             </article>
-            {% if page.previous %}
-                <a href="{{ page.previous.url }}">&laquo; Prev {{ page.previous.title }}</a>
-            {% endif %}
-            {% if page.next %}
-                <a href="{{ page.next.url }}">{{ page.next.title }} Next &raquo;</a>
-            {% endif %}
+            <div align="center">
+                {% if page.previous %}
+                    <a href="{{ page.previous.url }}">&laquo; Prev {{ page.previous.title }}</a>
+                {% else %}
+                    &laquo; No more
+                {% endif %}
+                {% if page.next %}
+                    <a href="{{ page.next.url }}">{{ page.next.title }} Next &raquo;</a>
+                {% else %}
+                     No more &raquo;
+                {% endif %}
+            </div>
             {% include comments.html %}
             {% include author.html %}
             {% include footer.html %}
