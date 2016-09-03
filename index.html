@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<main>
+<main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
     {% for post in paginator.posts %}
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
                     <meta itemprop="datePublished" content="{{post.date}}">
                     <time datetime="{{ post.date | date_to_xmlschema }}">
                         <div class="day">
-                            {{ post.date | date: "%d" }}
+                            {{ paginator.total_pages | date: "%d" }}
                         </div>
                         <div class="month-year">
                             {{ post.date | date: "%B %Y" }}
