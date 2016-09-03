@@ -33,7 +33,12 @@ layout: default
     {% if paginator.total_pages > 1 %}
         <div class="pagination">
             {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/#scroll">&laquo; Prev</a>
+                {% if paginator.previous_page == page %}
+                    <a href="https://kyleyoung-ymj.github.io/#scroll">&laquo; Prev</a>
+                }
+                {% else %}
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/#scroll">&laquo; Prev</a>
+                {% endif %}
             {% else %}
                 <span>&laquo; Prev</span>
             {% endif %}
