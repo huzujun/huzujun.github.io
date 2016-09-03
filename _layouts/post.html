@@ -17,6 +17,12 @@
             <article role="article" id="scroll" class="post-content" itemprop="articleBody">
                 {{ content }}
             </article>
+            {% if page.previous %}
+                <a href="{{ page.previous.url }}">&laquo; Prev{{ page.previous.title }}</a>
+            {% endif %}
+            {% if page.next %}
+                <a href="{{ page.next.url }}">Next &raquo;{{ page.next.title }}</a>
+            {% endif %}
             {% include comments.html %}
             {% include author.html %}
             {% include footer.html %}
