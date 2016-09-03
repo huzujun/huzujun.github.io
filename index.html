@@ -9,7 +9,7 @@ layout: default
                     <meta itemprop="datePublished" content="{{post.date}}">
                     <time datetime="{{ post.date | date_to_xmlschema }}">
                         <div class="day">
-                            {{ paginator.total_pages | date: "%d" }}
+                            {{ post.date | date: "%d" }}
                         </div>
                         <div class="month-year">
                             {{ post.date | date: "%B %Y" }}
