@@ -9,7 +9,7 @@ tags:
 - data structure
 - sparse table
 categories:
-- Algorithm
+- Algorithms
 ---
 
 # 学习背景

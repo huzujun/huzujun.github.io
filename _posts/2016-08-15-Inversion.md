@@ -10,7 +10,7 @@ tags:
 - convolution
 - inclusion-exclusion principle
 categories:
-- Algorithm
+- Algorithms
 ---
 
 >刚才的标题是唬人的...

@@ -8,7 +8,7 @@ tags:
 - number theory
 - FFT&NTT
 categories:
-- Algorithm
+- Algorithms
 ---
 
 # 扯扯扯

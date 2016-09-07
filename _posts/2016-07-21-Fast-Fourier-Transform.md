@@ -7,7 +7,7 @@ tags:
 - math
 - FFT&NTT
 categories:
-- Algorithm
+- Algorithms
 ---
 
 # 扯扯扯
