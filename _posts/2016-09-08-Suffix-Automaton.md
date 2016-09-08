@@ -146,7 +146,7 @@ struct Suffix_Automaton{
                 len[nq]=len[p]+1;
                 memcpy(trans[nq],trans[q],C<<2);
                 par[np]=par[q]=nq;
-                for(;p&&trans[p][c]==q;p=par[p])trans[p][c]=nq;
+                for(trans[p][c]=nq,p=par[p];p&&trans[p][c]==q;p=par[p])trans[p][c]=nq;
             }
         }
         last=np;
