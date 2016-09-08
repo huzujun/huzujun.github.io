@@ -120,41 +120,41 @@ $\text{parent}$树在后缀自动机中十分重要,不管是分析性质,还是
 const int N=(int)1e5+5;
 char str[N];
 struct Suffix_Automaton{
-	static const int NODE=N<<1,C=26;
-	int allc,last,par[NODE],len[NODE],trans[NODE][C];
-	int NewNode(){
-		int ret=++allc;
-		memset(trans[ret],0,C<<2);
-		return ret;
-	}
-	void init(){
-		allc=0;
-		last=NewNode();
-		par[last]=len[last]=0;
-	}
-	void extend(int id){
-		int c=str[id]-'a',p=last,np=NewNode();
-		len[np]=id+1;
-		for(;p&&!trans[p][c];p=par[p])trans[p][c]=np;
-		if(!p)par[np]=0;
-		else{
-			int q=trans[p][c];
-			if(len[q]==len[p]+1)par[np]=q;
-			else{
-				int nq=++allc;
-				par[nq]=par[q];
-				len[nq]=len[p]+1;
-				memcpy(trans[nq],trans[q],C<<2);
-				par[np]=par[q]=nq;
-				for(;p&&trans[p][c]==q;p=par[p])trans[p][c]=nq;
-			}
-		}
-		last=np;
-	}
-	void cons(){
-		init();
-		rep(i,0,strlen(str))extend(i);
-	}
+    static const int NODE=N<<1,C=26;
+    int allc,last,par[NODE],len[NODE],trans[NODE][C];
+    int NewNode(){
+        int ret=++allc;
+        memset(trans[ret],0,C<<2);
+        return ret;
+    }
+    void init(){
+        allc=0;
+        last=NewNode();
+        par[last]=len[last]=0;
+    }
+    void extend(int id){
+        int c=str[id]-'a',p=last,np=NewNode();
+        len[np]=id+1;
+        for(;p&&!trans[p][c];p=par[p])trans[p][c]=np;
+        if(!p)par[np]=0;
+        else{
+            int q=trans[p][c];
+            if(len[q]==len[p]+1)par[np]=q;
+            else{
+                int nq=++allc;
+                par[nq]=par[q];
+                len[nq]=len[p]+1;
+                memcpy(trans[nq],trans[q],C<<2);
+                par[np]=par[q]=nq;
+                for(;p&&trans[p][c]==q;p=par[p])trans[p][c]=nq;
+            }
+        }
+        last=np;
+    }
+    void cons(){
+        init();
+        rep(i,0,strlen(str))extend(i);
+    }
 };
 ```
 
