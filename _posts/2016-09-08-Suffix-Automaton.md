@@ -132,9 +132,9 @@ struct Suffix_Automaton{
         last=NewNode();
         par[last]=len[last]=0;
     }
-    void extend(int id){
-        int c=str[id]-'a',p=last,np=NewNode();
-        len[np]=id+1;
+    void extend(int c){
+        int p=last,np=NewNode();
+        len[np]=len[last]+1;
         for(;p&&!trans[p][c];p=par[p])trans[p][c]=np;
         if(!p)par[np]=0;
         else{
@@ -153,7 +153,7 @@ struct Suffix_Automaton{
     }
     void cons(){
         init();
-        rep(i,0,strlen(str))extend(i);
+        rep(i,0,strlen(str))extend(str[i]-'a');
     }
 };
 ```
