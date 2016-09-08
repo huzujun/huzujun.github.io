@@ -136,7 +136,7 @@ struct Suffix_Automaton{
         int p=last,np=NewNode();
         len[np]=len[last]+1;
         for(;p&&!trans[p][c];p=par[p])trans[p][c]=np;
-        if(!p)par[np]=0;
+        if(!p)par[np]=1;
         else{
             int q=trans[p][c];
             if(len[q]==len[p]+1)par[np]=q;
