@@ -121,35 +121,39 @@ const int N=(int)1e5+5;
 char str[N];
 struct Suffix_Automaton{
 	static const int NODE=N<<1,C=26;
-	int allc,par[NODE],len[NODE],trans[NODE][C];
+	int allc,last,par[NODE],len[NODE],trans[NODE][C];
 	int NewNode(){
 		int ret=++allc;
 		memset(trans[ret],0,C<<2);
 		return ret;
 	}
-	void cons(){
+	void init(){
 		allc=0;
-		int last=NewNode();
+		last=NewNode();
 		par[last]=len[last]=0;
-		rep(i,0,strlen(str)){
-			int c=str[i],p=last,np=NewNode();
-			len[np]=i+1;
-			for(;p&&!trans[p][c];p=par[p])trans[p][c]=np;
-			if(!p)par[np]=0;
+	}
+	void extend(int id){
+		int c=str[id]-'a',p=last,np=NewNode();
+		len[np]=id+1;
+		for(;p&&!trans[p][c];p=par[p])trans[p][c]=np;
+		if(!p)par[np]=0;
+		else{
+			int q=trans[p][c];
+			if(len[q]==len[p]+1)par[np]=q;
 			else{
-				int q=trans[p][c];
-				if(len[q]==len[p]+1)par[np]=q;
-				else{
-					int nq=++allc;
-					par[nq]=par[q];
-					len[nq]=len[p]+1;
-					memcpy(trans[nq],trans[q],C<<2);
-					par[np]=par[q]=nq;
-					for(;p&&trans[p][c]==q;p=par[p])trans[p][c]=nq;
-				}
+				int nq=++allc;
+				par[nq]=par[q];
+				len[nq]=len[p]+1;
+				memcpy(trans[nq],trans[q],C<<2);
+				par[np]=par[q]=nq;
+				for(;p&&trans[p][c]==q;p=par[p])trans[p][c]=nq;
 			}
-			last=np;
 		}
+		last=np;
+	}
+	void cons(){
+		init();
+		rep(i,0,strlen(str))extend(i);
 	}
 };
 ```
