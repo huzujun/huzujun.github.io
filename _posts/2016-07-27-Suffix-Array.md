@@ -79,8 +79,8 @@ struct Suffix_Array{
             a[sa[0]]=0;
             rep(i,1,n)a[sa[i]]=b[sa[i-1]]==b[sa[i]]&&b[sa[i-1]+j]==b[sa[i]+j]?p-1:p++;
         }
+        if(a!=rk)memcpy(rk,a,n<<2);
         --n;
-        if(a!=rk)memcpy(rk,a,n+1<<2);
         for(int i=0,h=0;i<n;height[rk[i++]]=h){
             if(h)--h;
             for(int j=sa[rk[i]-1];str[i+h]==str[j+h];++h);
