@@ -45,7 +45,7 @@ layout: default
 
             {% for page in (1..paginator.total_pages) %}
                 {% if page == paginator.page %}
-                    <span> page </span>
+                    <span> {{ page }} </span>
                 {% elsif page == 1 %}
                     <a href="https://kyleyoung-ymj.github.io/#scroll">{{ page }}</a>
                 {% else %}
@@ -56,7 +56,7 @@ layout: default
           {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/#scroll">Next &raquo;</a>
           {% else %}
-            <span>Next &gt;&gt;</span>
+            <span>Next &gt; &gt;</span>
           {% endif %}
         </div>
     {% endif %}
