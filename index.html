@@ -35,12 +35,12 @@ layout: default
         <div class="paginator" align="center">
             {% if paginator.previous_page %}
                 {% if paginator.previous_page == 1 %}
-                    <a href="https://kyleyoung-ymj.github.io/#scroll">&laquo; Prev</a>
+                    <a href="https://kyleyoung-ymj.github.io/#scroll">&lt;&lt; Prev</a>
                 {% else %}
-                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/#scroll">&laquo; Prev</a>
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/#scroll">&lt;&lt; Prev</a>
                 {% endif %}
             {% else %}
-                <span>&lt; &lt; Prev</span>
+                <span>&lt;&lt; Prev</span>
             {% endif %}
 
             {% for page in (1..paginator.total_pages) %}
@@ -54,9 +54,9 @@ layout: default
             {% endfor %}
 
           {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/#scroll">Next &raquo;</a>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/#scroll">Next &gt;&gt;</a>
           {% else %}
-            <span>Next &gt; &gt;</span>
+            <span>Next &gt;&gt;</span>
           {% endif %}
         </div>
     {% endif %}
