@@ -19,14 +19,14 @@
             </article>
             <div class="paginator" align="center">
                 {% if page.previous %}
-                    <a href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+                    <a href="{{ page.previous.url }}">&lt;&lt; {{ page.previous.title }}</a>
                 {% else %}
-                    &laquo; No more
+                    &lt;&lt; No more
                 {% endif %}
                 {% if page.next %}
-                    <a href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+                    <a href="{{ page.next.url }}">{{ page.next.title }} &gt;&gt;</a>
                 {% else %}
-                     No more &raquo;
+                     No more &gt;&gt;
                 {% endif %}
             </div>
             {% include comments.html %}
