@@ -21,12 +21,12 @@
                 {% if page.previous %}
                     <a href="{{ page.previous.url }}">&lt;&lt; {{ page.previous.title }}</a>
                 {% else %}
-                    &lt;&lt; No more
+                    <span>&lt;&lt; No more</span>
                 {% endif %}
                 {% if page.next %}
                     <a href="{{ page.next.url }}">{{ page.next.title }} &gt;&gt;</a>
                 {% else %}
-                     No more &gt;&gt;
+                    <span>No more &gt;&gt;</span>
                 {% endif %}
             </div>
             {% include comments.html %}
