@@ -17,25 +17,17 @@
             <article role="article" id="scroll" class="post-content" itemprop="articleBody">
                 {{ content }}
             </article>
-            <!--div class="post-paginator" align="center">
+            <div class="paginator" align="center">
                 {% if page.previous %}
-                    <a href="{{ page.previous.url }}">&lt;&lt; {{ page.previous.title }}</a>
+                    <a href="{{ page.previous.url }}" align="left">&lt;&lt; {{ page.previous.title }}</a>
                 {% else %}
                     <span>&lt;&lt; No more</span>
                 {% endif %}
                 {% if page.next %}
-                    <a href="{{ page.next.url }}">{{ page.next.title }} &gt;&gt;</a>
+                    <a href="{{ page.next.url }}" align="right">{{ page.next.title }} &gt;&gt;</a>
                 {% else %}
                     <span>No more &gt;&gt;</span>
                 {% endif %}
-            </div-->
-            <div class="post-nav">
-              <div class="post-nav-next post-nav-item">
-                  <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
-              </div>
-              <div class="post-nav-prev post-nav-item">
-                  <a href="{{ page.next.url }}">{{ page.next.title }}</a>
-              </div>
             </div>
             {% include comments.html %}
             {% include author.html %}
