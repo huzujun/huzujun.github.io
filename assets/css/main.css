@@ -984,3 +984,36 @@ html,body{
 	margin-bottom:.5rem;
 	text-decoration:none;
 }
+.post-paginator {
+  overflow: hidden;
+  margin-top: 60px;
+  padding: 10px;
+  white-space: nowrap;
+  border-top: 1px solid #eee;
+}
+.post-paginator-item {
+  display: inline-block;
+  width: 50%;
+  white-space: normal;
+}
+.post-paginator-item a {
+  position: relative;
+  display: inline-block;
+  line-height: 25px;
+  font-size: 14px;
+  color: #555;
+  border-bottom: none;
+}
+.post-paginator-item a:hover {
+  color: #222;
+  border-bottom: none;
+}
+.post-paginator-item a:active {
+  top: 2px;
+}
+.post-paginator-item a i {
+  font-size: 12px;
+}
+.post-nav-prev {
+  text-align: right;
+}

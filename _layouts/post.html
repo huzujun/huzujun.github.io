@@ -17,7 +17,7 @@
             <article role="article" id="scroll" class="post-content" itemprop="articleBody">
                 {{ content }}
             </article>
-            <div class="paginator" align="center">
+            <!--div class="post-paginator" align="center">
                 {% if page.previous %}
                     <a href="{{ page.previous.url }}">&lt;&lt; {{ page.previous.title }}</a>
                 {% else %}
@@ -28,6 +28,14 @@
                 {% else %}
                     <span>No more &gt;&gt;</span>
                 {% endif %}
+            </div-->
+            <div class="post-nav">
+              <div class="post-nav-next post-nav-item">
+                  <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+              </div>
+              <div class="post-nav-prev post-nav-item">
+                  <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+              </div>
             </div>
             {% include comments.html %}
             {% include author.html %}
