@@ -19,12 +19,12 @@
             </article>
             <div class="paginator" align="center">
                 {% if page.previous %}
-                    <a href="{{ page.previous.url }}" align="left">&lt;&lt; {{ page.previous.title }}</a>
+                    <a href="{{ page.previous.url }}">&lt;&lt; {{ page.previous.title }}</a>
                 {% else %}
                     <span>&lt;&lt; No more</span>
                 {% endif %}
                 {% if page.next %}
-                    <a href="{{ page.next.url }}" align="right">{{ page.next.title }} &gt;&gt;</a>
+                    <a href="{{ page.next.url }}">{{ page.next.title }} &gt;&gt;</a>
                 {% else %}
                     <span>No more &gt;&gt;</span>
                 {% endif %}
