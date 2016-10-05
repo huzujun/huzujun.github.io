@@ -61,7 +61,7 @@ categories:
 
 $\text{parent}$树在后缀自动机中十分重要,不管是分析性质,还是对后缀自动机进行构造,都离不开这棵树.
 
-## Construction Algorithm
+## Constructive Algorithm
 
 下面考虑如何构造$\text{SAM}$.
 
