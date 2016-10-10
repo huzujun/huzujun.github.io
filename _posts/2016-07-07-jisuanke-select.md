@@ -36,7 +36,7 @@ $1\le n\le2\times10^5,1\le l_i<r_i\le10^9.$
 
 请看下面的手绘渣图:
 
-![](http://kyleyoung-ymj.cf/assets/img/upload/jisuanke-select.png)
+![](https://kyleyoung-ymj.github.io/assets/img/upload/jisuanke-select.png)
 
 这样区间$i$往左边应该只能支配到$i$本身,但是如果选择了$i$,区间$i-2$也是可以不选的.
 
