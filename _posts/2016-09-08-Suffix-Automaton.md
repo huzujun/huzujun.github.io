@@ -121,7 +121,7 @@ const int N=(int)1e5+5;
 char str[N];
 struct Suffix_Automaton{
     static const int NODE=N<<1,C=26;
-    int allc,last,par[NODE],len[NODE],trans[NODE][C];
+    int allc,lst,par[NODE],len[NODE],trans[NODE][C];
     int NewNode(){
         int ret=++allc;
         memset(trans[ret],0,C<<2);
@@ -129,12 +129,12 @@ struct Suffix_Automaton{
     }
     void init(){
         allc=0;
-        last=NewNode();
-        par[last]=len[last]=0;
+        lst=NewNode();
+        par[lst]=len[lst]=0;
     }
     void extend(int c){
-        int p=last,np=NewNode();
-        len[np]=len[last]+1;
+        int p=lst,np=NewNode();
+        len[np]=len[lst]+1;
         for(;p&&!trans[p][c];p=par[p])trans[p][c]=np;
         if(!p)par[np]=1;
         else{
@@ -149,7 +149,7 @@ struct Suffix_Automaton{
                 for(trans[p][c]=nq,p=par[p];p&&trans[p][c]==q;p=par[p])trans[p][c]=nq;
             }
         }
-        last=np;
+        lst=np;
     }
     void cons(){
         init();
