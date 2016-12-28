@@ -71,7 +71,7 @@ struct Suffix_Array{
             rep(i,n-j,n)b[p++]=i;
             rep(i,0,n)if(sa[i]>=j)b[p++]=sa[i]-j;
             memset(cnt,0,m<<2);
-            rep(i,0,n)++cnt[a[b[i]]];
+            rep(i,0,n)++cnt[a[i]];
             rep(i,1,m)cnt[i]+=cnt[i-1];
             per(i,0,n)sa[--cnt[a[b[i]]]]=b[i];
             swap(a,b);
