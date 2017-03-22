@@ -84,7 +84,7 @@ $$
 $$
 \begin{eqnarray}
 f(S)&=&\sum_{S\subseteq T}g(T),\\
-g(S)&=&\sum_{S\subseteq T}(-1)^{\mid T\mid-\mid S\mid}S(T).
+g(S)&=&\sum_{S\subseteq T}(-1)^{\mid T\mid-\mid S\mid}f(T).
 \end{eqnarray}
 $$
 
