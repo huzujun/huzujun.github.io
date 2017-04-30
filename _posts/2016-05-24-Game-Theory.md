@@ -100,7 +100,7 @@ categories:
   - 有两堆石子,双方轮流从某一堆取走若干石子或者从两堆中取走相同数目的石子,不能取的人输.
   - 容易推理得出对任意自然数$k$,都存在唯一的一个必败态使得两堆石子数差为$k$,设其为$P_k=(a_k,b_k)$,表示石子数分别为$a_k,b_k(a_k\leqslant b_k)$.
   - 那么$a_k$为在$P_{k_0}(k_0<k)$中未出现过的最小自然数,$b_k=a_k+k$.
-  - 数学班的说,用Betty定理以及显然的单调性就可以推出神奇的结论:
+  - 用Beatty定理以及显然的单调性就可以推出神奇的结论:
   - $a_k=\lfloor k\cdot \frac{\sqrt5+1}{2}\rfloor,b_k=\lfloor k\cdot \frac{\sqrt5+3}{2}\rfloor$.
 
 - **Take & Break**
