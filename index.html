@@ -35,7 +35,7 @@ layout: default
         <div class="paginator" align="center">
             {% if paginator.previous_page %}
                 {% if paginator.previous_page == 1 %}
-                    <a href="https://kyleyoung-ymj.github.io/#scroll">&lt;&lt; Prev</a>
+                    <a href="https://huzujun.github.io/#scroll">&lt;&lt; Prev</a>
                 {% else %}
                     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/#scroll">&lt;&lt; Prev</a>
                 {% endif %}
@@ -47,7 +47,7 @@ layout: default
                 {% if page == paginator.page %}
                     <span> {{ page }} </span>
                 {% elsif page == 1 %}
-                    <a href="https://kyleyoung-ymj.github.io/#scroll">{{ page }}</a>
+                    <a href="https://huzujun.github.io/#scroll">{{ page }}</a>
                 {% else %}
                     <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/#scroll">{{ page }}</a>
                 {% endif %}
