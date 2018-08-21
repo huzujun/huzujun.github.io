@@ -38,6 +38,18 @@ links:
     url: /tags
   - title: About Me
     url: /about
+  - title: Links
+    url: /links
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
+
+# duoshuo
+comments :
+  provider : duoshuo
+  duoshuo : 
+  short_name : kyleyoung
+
+# paginate
+paginate: 10
+paginate_path: "/page:num"
