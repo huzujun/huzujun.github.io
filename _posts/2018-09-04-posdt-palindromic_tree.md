@@ -115,9 +115,9 @@ int main() {
 ## 2018南京网络赛I题skr
 https://nanti.jisuanke.com/t/30998
 
-    A number is skr, if and only if it's unchanged after being reversed. For example, "12321", "11" and "1" are skr numbers, but "123", "221" are not. FYW has a string of numbers, each substring can present a number, he wants to know the sum of distinct skr number in the string. FYW are not good at math, so he asks you for help.
-    
-	the length of SS is less than 2000000.
+A number is skr, if and only if it's unchanged after being reversed. For example, "12321", "11" and "1" are skr numbers, but "123", "221" are not. FYW has a string of numbers, each substring can present a number, he wants to know the sum of distinct skr number in the string. FYW are not good at math, so he asks you for help.
+
+the length of SS is less than 2000000.
 
 这题的话稍微改改模板就好了，每个节点维护一个num表示节点对应的树，新建节点的时候转移一下就好了
 
