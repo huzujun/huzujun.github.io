@@ -41,14 +41,17 @@ links:
   - title: Links
     url: /links
 
+gitalk:
+  enable: true
+  githubID: huzujun 
+  repo: huzujun.github.io
+  ClientID: ae4f9c0162606fea64f4
+  ClientSecret: 371313f179238c151029431a491797baabef99e5
+  adminUser: huzujun
+  distractionFreeMode: true
+
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
-
-# duoshuo
-comments :
-  provider : duoshuo
-  duoshuo : 
-  short_name : kyleyoung
 
 # paginate
 paginate: 10
