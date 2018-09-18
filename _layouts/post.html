@@ -33,6 +33,22 @@
                     <span>No more &gt;&gt;</span>
                 {% endif %}
             </div>
+            
+            <div id="gitmentContainer"></div>
+			<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+			<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+			<script>
+			var gitment = new Gitment({
+				owner: 'huzujun',
+				repo: 'https://github.com/huzujun/huzujun.github.io',
+				oauth: {
+					client_id: 'ae4f9c0162606fea64f4',
+					client_secret: '371313f179238c151029431a491797baabef99e5',
+				},
+			});
+			gitment.render('gitmentContainer');
+			</script>
+
             <br><br><br><br>
             {% include author.html %}
             {% include footer.html %}
