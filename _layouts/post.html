@@ -38,16 +38,17 @@
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   			<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
             <script>
-				var gitment = new Gitment({
-					owner: 'huzujun',
-					repo: 'https://github.com/huzujun/huzujun.github.io',
-					oauth: {
-						client_id: 'ae4f9c0162606fea64f4',
-						client_secret: '371313f179238c151029431a491797baabef99e5',
-					},
-				});
-				gitment.render('gitmentContainer');
+		        var gitalk = new Gitalk({
+				  clientID: 'ae4f9c0162606fea64f4',
+				  clientSecret: '371313f179238c151029431a491797baabef99e5',
+				  repo: 'https://github.com/huzujun/huzujun.github.io',
+				  owner: 'https://github.com/huzujun/huzujun.github.io',
+				  admin: ['huzujun'],
+				  id: location.pathname,      // Ensure uniqueness and length less than 50
+				  distractionFreeMode: true  // Facebook-like distraction free mode
+				})
 			</script>
+			
             <br><br><br><br>
             {% include author.html %}
             {% include footer.html %}
