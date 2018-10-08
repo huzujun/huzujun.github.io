@@ -3,8 +3,7 @@ layout: post
 title: "abstration"
 date: 2018-10-08 20:32:30
 image: '/assets/img/'
-description: 
-如何理解抽象类和接口？
+description: 如何理解抽象类和接口？
 tags:
 - java
 categories:
