@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "abstration"
+title: "java抽象与接口"
 date: 2018-10-08 20:32:30
 image: '/assets/img/'
 description: 如何理解抽象类和接口？
